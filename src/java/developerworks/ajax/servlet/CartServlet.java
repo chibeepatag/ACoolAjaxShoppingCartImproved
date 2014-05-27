@@ -15,9 +15,9 @@ public class CartServlet extends HttpServlet {
 
   /**
    * Updates Cart, and outputs XML representation of contents
-     * @param req
-     * @param res
-     * @throws java.io.IOException
+   * @param req
+   * @param res
+   * @throws java.io.IOException
    */
   public void doPost(HttpServletRequest req, HttpServletResponse res) throws java.io.IOException {
 
@@ -49,7 +49,7 @@ public class CartServlet extends HttpServlet {
   }
 
     /**
-     *
+     * Receives get requests and processes it through the post method.
      * @param req
      * @param res
      * @throws IOException
@@ -60,7 +60,8 @@ public class CartServlet extends HttpServlet {
     doPost(req,res);
   }
 
-  /**This method gets the shopping cart from the session.
+  /**
+   * This method gets the shopping cart from the session.
    * @param req The HttpServletRequest
    */
     private Cart getCartFromSession(HttpServletRequest req) {
